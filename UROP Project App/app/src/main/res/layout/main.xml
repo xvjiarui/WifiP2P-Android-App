@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/White">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/frag_list"
+                class="app.com.example.android.wifip2p_test3.DeviceListFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </fragment>
+
+            <fragment
+                android:id="@+id/frag_detail"
+                class="app.com.example.android.wifip2p_test3.DeviceDetailFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </fragment>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
